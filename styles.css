@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(25, 25, 25);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.btn,
+.btn1 {
+    background-color: transparent;
+    border: solid 4px white;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin: 5px;
+    margin-bottom: 50px;
+}
+
+.bgimg {
+    width: 75px;
+}
+
+.reset, .autoPlay {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    padding: 15px;
+}
+
+.js-result {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.move-icon {
+    background-color: transparent;
+    width: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .btn1 {
+        margin-left: 100px;
+    }
+}
+@media (min-width: 321px) and (max-width: 340px) {
+    .btn1 {
+        margin-left: 10px;
+    }
+}
+
+.instruction{
+    position: absolute;
+    right: 210px;
+    top: 100px;
+    padding: 20px;
+    background-color: transparent;
+    border: solid rgb(206, 178, 17) 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.50s, opacity 0.15s; 
+}
+.instruction:hover {
+    transform: translate(10px, 10px);
+}
+
+.instruction:active{
+    opacity: 0.5;
+}
+
+#image{
+    object-fit: cover;
+    position: absolute;
+    top: 190px;
+    right: 170px;
+    width: 250px;
+    border: solid rgb(206, 178, 17) 5px;
+    border-radius: 10px;
+}
