@@ -83,3 +83,19 @@ body {
     border: solid rgb(206, 178, 17) 5px;
     border-radius: 10px;
 }
+
+@media (min-width: 0px) and (max-width: 900px) {
+    .instruction{
+        position: absolute;
+        top: 500px;
+        left: 50px;
+        right: 650px;
+
+    }
+    #image{
+        position: absolute;
+        top:600px;
+        left: 25px;
+        right: 650px;
+    }
+}
