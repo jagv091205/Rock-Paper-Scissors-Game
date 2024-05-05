@@ -42,17 +42,6 @@ body {
     width: 40px;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
-    .btn1 {
-        margin-left: 100px;
-    }
-}
-@media (min-width: 321px) and (max-width: 340px) {
-    .btn1 {
-        margin-left: 10px;
-    }
-}
-
 .instruction{
     position: absolute;
     right: 210px;
@@ -84,18 +73,79 @@ body {
     border-radius: 10px;
 }
 
-@media (min-width: 0px) and (max-width: 900px) {
+
+@media (min-width: 370px) and (max-width: 769px) {
+    .instruction {
+        position: absolute;
+        top: 700px;
+        left: 50px; 
+        right: 50px; 
+        width: calc(100% - 100px); 
+    }
+
+    #image {
+        position: absolute;
+        top: 790px; 
+        left: 100px; 
+        right: 25px; 
+        max-width: calc(100% - 50px); 
+    }
+}
+
+@media(min-width: 770px) and (max-width:930px){
     .instruction{
         position: absolute;
-        top: 500px;
-        left: 50px;
-        right: 650px;
-
+        right: 25px;
     }
+
     #image{
         position: absolute;
-        top:600px;
-        left: 25px;
-        right: 650px;
+        right: 25px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 369px) {
+    .instruction {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px; /* Add some padding for better spacing */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        color: white; /* Text color */
+        z-index: 9999; /* Ensure button is on top of other content */
+    }
+
+    #image {
+        position: absolute;
+        bottom: 60px; /* Adjust this value for proper positioning */
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        z-index: 9998; /* Ensure image is behind the button */
+    }
+}
+
+
+@media (max-width: 320px){
+    .instruction{
+    margin-top: 750px;
+
+    }
+
+    #image{
+        margin-top: 750px;
+    }
+}
+
+@media (min-width:321px) and (max-width:369px){
+    .instruction{
+        margin-top: 750px;
+    }
+    #image{
+        margin-top: 770px;
     }
 }
